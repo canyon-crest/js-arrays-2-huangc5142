@@ -17,14 +17,16 @@
 // STEP 1: Create an array called "colors" with exactly
 //         three strings: "red", "green", "blue"
 //         Use let to declare it.
-
+   let colors = ["red", "green", "blue"]
 // STEP 2: Use a for loop to print each color.
 //         Each line should say exactly:
 //         "Color: red"
 //         "Color: green"
 //         "Color: blue"
 //         Use: console.log("Color: " + colors[i])
-
+    for (let i = 0; i < colors.length; i ++) {
+        console.log("Color: " + colors[i]);
+    }
 
 // ============================================
 //  MAIN: Number Analyzer
