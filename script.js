@@ -78,13 +78,27 @@
 //         Average = sum / numbers.length
 //         Print: console.log("Average: " + average)
 //         (No rounding needed)
-
+    average = sum / numbers.length
+    console.log("Average: " + average);
 // STEP 8: Count how many numbers are even.
 //         A number is even if number % 2 equals 0.
 //         Use a for loop and an if statement.
 //         Print: console.log("Even count: " + count)
-
+    let count = 0;
+    for (let i = 0; i < numbers.length; i ++) {
+        if ( i % 1 == 0) {
+            count += 1;
+        }
+    }
+    console.log("Even count: " + count);
 // STEP 9: Find the largest number.
 //         Start with the first number as the largest.
 //         Loop through the rest and update if you find a bigger one.
 //         Print: console.log("Largest: " + largest)
+    let largest = numbers[0];
+    for (let i = 0; i < numbers.length; i ++) {
+        if (numbers[i] > largest) {
+            largest = numbers[i];
+        }
+    }
+    console.log("Largest: " + largest);
