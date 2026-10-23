@@ -58,6 +58,8 @@
 //         also add ", " after it.
     let message = ""
     for (let i = 0; i < numbers.length; i ++) {
+        message += numbers[i];
+
         if (i < numbers.length - 1) {
             message += ", ";
          }
