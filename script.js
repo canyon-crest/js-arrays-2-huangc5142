@@ -58,13 +58,11 @@
 //         also add ", " after it.
     let message = ""
     for (let i = 0; i < numbers.length; i ++) {
-        if (i == numbers.length + 1) {
-            console.log("Numbers: " + message);
-        }
-        else {
-            message += (numbers[i] + ", ");
-        }
+        if (i < numbers.length - 1) {
+            message += ", ";
+         }
     }
+    console.log("Numbers: " + message)
 
 // STEP 6: Calculate the sum of all numbers.
 //         Use a for loop to add each number to a running total.
