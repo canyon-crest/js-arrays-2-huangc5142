@@ -17,7 +17,7 @@
 // STEP 1: Create an array called "colors" with exactly
 //         three strings: "red", "green", "blue"
 //         Use let to declare it.
-   let colors = ["red", "green", "blue"]
+   let colors = ["red", "green", "blue"];
 // STEP 2: Use a for loop to print each color.
 //         Each line should say exactly:
 //         "Color: red"
@@ -33,6 +33,10 @@
 // ============================================
 // Collect 5 numbers from the user, store them in an array,
 // then calculate and display statistics.
+    let numbers = [];
+    for (let i = 0; i < 5; i ++) {
+        numbers.push(parseFloat(prompt("Enter number " + (i+1))));
+    }
 
 // STEP 3: Create an empty array called "numbers" using let.
 //         let numbers = [];
@@ -52,11 +56,24 @@
 //         HINT: Start with an empty string. In the loop,
 //         add the number. If it's not the last number,
 //         also add ", " after it.
+    let message = ""
+    for (let i = 0; i < numbers.length; i ++) {
+        if (i == numbers.length + 1) {
+            console.log("Numbers: " + message);
+        }
+        else {
+            message += (numbers[i] + ", ");
+        }
+    }
 
 // STEP 6: Calculate the sum of all numbers.
 //         Use a for loop to add each number to a running total.
 //         Print: console.log("Sum: " + sum)
-
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i ++) {
+        sum += numbers[i];
+    }
+    console.log("Sum: " + sum);
 // STEP 7: Calculate the average.
 //         Average = sum / numbers.length
 //         Print: console.log("Average: " + average)
